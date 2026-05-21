@@ -10,12 +10,7 @@ import {
   optScene,
   optSnake,
   optWindow,
-<<<<<<<< HEAD:src/modules/graphics.ts
-} from './options'
-import { createCube } from './snakeLogic'
-========
 } from '@/shared/config/options'
->>>>>>>> b24981960af9fae0f6c23f32dec5831e7dd8f6d1:src/shared/lib/three/scene.ts
 
 // scene
 export const scene = new THREE.Scene()

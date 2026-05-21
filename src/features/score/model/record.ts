@@ -1,10 +1,5 @@
-<<<<<<<< HEAD:src/modules/record.ts
-import { defineNumbers } from './account'
-import { optCtrlSnake } from './options'
-========
 import { defineNumbers } from '@/features/score/model/account'
 import { optCtrlSnake } from '@/shared/config/options'
->>>>>>>> b24981960af9fae0f6c23f32dec5831e7dd8f6d1:src/features/score/model/record.ts
 
 export function checkRecord() {
   if (!localStorage.getItem('record')) {
