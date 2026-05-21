@@ -1,15 +1,15 @@
 import * as THREE from 'three'
 
 import {
-  optWindow,
+  optAmbLight,
   optCamera,
-  optScene,
-  optPlatform,
-  optSnake,
-  optFoot,
   optDirLightOne,
   optDirLightTwo,
-  optAmbLight,
+  optFoot,
+  optPlatform,
+  optScene,
+  optSnake,
+  optWindow,
 } from './options'
 import { createCube } from './snakeLogic'
 
