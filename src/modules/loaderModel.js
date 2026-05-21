@@ -1,10 +1,12 @@
 import { loaderModel } from './global.js'
 
-export const platformModel = require('../models/b_p_12.gltf')
-export const appleModel = require('../models/a_p_02.gltf')
-export const snakeHeadModel = require('../models/snake_head_01.gltf')
-export const snakeBodyModel = require('../models/snake_body_02.gltf')
-export const crownModel = require('../models/crown_01.gltf')
+import appleModel from '../models/a_p_02.gltf'
+import platformModel from '../models/b_p_12.gltf'
+import crownModel from '../models/crown_01.gltf'
+import snakeBodyModel from '../models/snake_body_02.gltf'
+import snakeHeadModel from '../models/snake_head_01.gltf'
+
+export { appleModel, crownModel, platformModel, snakeBodyModel, snakeHeadModel }
 
 loaderModel(
   // // dark

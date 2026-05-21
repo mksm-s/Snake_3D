@@ -1,16 +1,26 @@
+import number0 from '../models/numbers/0.gltf'
+import number1 from '../models/numbers/1.gltf'
+import number2 from '../models/numbers/2.gltf'
+import number3 from '../models/numbers/3.gltf'
+import number4 from '../models/numbers/4.gltf'
+import number5 from '../models/numbers/5.gltf'
+import number6 from '../models/numbers/6.gltf'
+import number7 from '../models/numbers/7.gltf'
+import number8 from '../models/numbers/8.gltf'
+import number9 from '../models/numbers/9.gltf'
 import { loaderModel, removeModelsById } from './global.js'
 
 const numbers = {
-  0: require('../models/numbers/0.gltf'),
-  1: require('../models/numbers/1.gltf'),
-  2: require('../models/numbers/2.gltf'),
-  3: require('../models/numbers/3.gltf'),
-  4: require('../models/numbers/4.gltf'),
-  5: require('../models/numbers/5.gltf'),
-  6: require('../models/numbers/6.gltf'),
-  7: require('../models/numbers/7.gltf'),
-  8: require('../models/numbers/8.gltf'),
-  9: require('../models/numbers/9.gltf'),
+  0: number0,
+  1: number1,
+  2: number2,
+  3: number3,
+  4: number4,
+  5: number5,
+  6: number6,
+  7: number7,
+  8: number8,
+  9: number9,
 }
 
 export function defineNumbers(account, info, id) {
