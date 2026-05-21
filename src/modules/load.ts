@@ -1,4 +1,4 @@
-import { optModelLoad } from './options.js'
+import { optModelLoad } from './options'
 
 function loadGame() {
   const interval = setInterval(() => {

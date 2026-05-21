@@ -1,6 +1,4 @@
 import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { renderer, scene, dirLightOne, dirLightTwo, camera } from './graphics.js'
 
 // const controls = new OrbitControls(camera, renderer.domElement)
 

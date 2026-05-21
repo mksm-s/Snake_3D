@@ -8,7 +8,7 @@ import number6 from '../models/numbers/6.gltf'
 import number7 from '../models/numbers/7.gltf'
 import number8 from '../models/numbers/8.gltf'
 import number9 from '../models/numbers/9.gltf'
-import { loaderModel, removeModelsById } from './global.js'
+import { loaderModel, removeModelsById } from './global'
 
 export function defineNumbers(account, info, id) {
   account = `${account}`

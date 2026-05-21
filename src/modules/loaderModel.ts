@@ -1,4 +1,4 @@
-import { loaderModel } from './global.js'
+import { loaderModel } from './global'
 
 import appleModel from '../models/a_p_02.gltf'
 import platformModel from '../models/b_p_12.gltf'

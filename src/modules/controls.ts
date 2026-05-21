@@ -1,4 +1,4 @@
-import { optPlatform, optCtrlSnake, optKey } from './options.js'
+import { optCtrlSnake, optKey, optPlatform } from './options'
 
 // snake path
 export function snakePath() {

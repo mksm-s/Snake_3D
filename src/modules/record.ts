@@ -1,20 +1,20 @@
-import { optCtrlSnake } from './options.js'
-import { defineNumbers } from './account.js'
+import { defineNumbers } from './account'
+import { optCtrlSnake } from './options'
 
 export function checkRecord() {
   if (!localStorage.getItem('record')) {
     localStorage.setItem('record', optCtrlSnake.record.toString())
 
-      updateRecordFoot()
+    updateRecordFoot()
   } else {
     if (+localStorage.getItem('record') < optCtrlSnake.lengthSnake) {
       optCtrlSnake.record = +localStorage.getItem('record') + 1
       localStorage.setItem('record', optCtrlSnake.record.toString())
 
-        updateRecordFoot()
+      updateRecordFoot()
     } else {
       optCtrlSnake.record = +localStorage.getItem('record')
-        updateRecordFoot()
+      updateRecordFoot()
     }
   }
 }
