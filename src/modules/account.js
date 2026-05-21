@@ -10,19 +10,6 @@ import number8 from '../models/numbers/8.gltf'
 import number9 from '../models/numbers/9.gltf'
 import { loaderModel, removeModelsById } from './global.js'
 
-const numbers = {
-  0: number0,
-  1: number1,
-  2: number2,
-  3: number3,
-  4: number4,
-  5: number5,
-  6: number6,
-  7: number7,
-  8: number8,
-  9: number9,
-}
-
 export function defineNumbers(account, info, id) {
   account = `${account}`
   let accountArray = account.split('')
@@ -36,6 +23,19 @@ export function defineNumbers(account, info, id) {
 }
 
 function showNumberModel(number, info, index, id) {
+  const numbers = {
+    0: number0,
+    1: number1,
+    2: number2,
+    3: number3,
+    4: number4,
+    5: number5,
+    6: number6,
+    7: number7,
+    8: number8,
+    9: number9,
+  }
+
   loaderModel(
     numbers[number],
     {
