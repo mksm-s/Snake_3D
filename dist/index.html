@@ -1,1 +1,115 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Snake 3D</title><script defer="defer" src="main.bdf1b524d2462ad64280.js"></script></head><body><style>*{padding:0;margin:0;font-family:sans-serif}#loader__screen{width:100%;height:100vh;position:absolute;opacity:1;z-index:100;background:#2d2d2d;transition:.5s;color:#fff;font-size:30px;display:flex;justify-content:center;align-items:center}canvas{display:block}</style><div id="loader__screen">Load...</div><canvas id="canvas"></canvas></body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake 3D</title>
+    <script type="module" crossorigin src="/assets/index--tS2JMqx.js"></script>
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      body::-webkit-scrollbar {
+        width: 0 !important;
+        height: 0 !important;
+      }
+
+      #loader__screen {
+        width: 100%;
+        height: 100vh;
+
+        position: absolute;
+        opacity: 1;
+        z-index: 100;
+
+        background: #2d2d2d;
+        transition: 0.5s;
+
+        color: #ffffff;
+        font-size: 30px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      @keyframes sun-rise {
+        from {
+          transform: translateY(100px);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      #wrapper__training {
+        animation: 1s ease-in-out 0s alternate sun-rise;
+        -webkit-user-select: none;
+                user-select: none;
+        pointer-events: none;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      #wrapper__training > p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      #training {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+      }
+
+      #training > span {
+        padding: 20px 26px;
+        margin: 5px;
+        border-radius: 3px;
+        font-size: 18px;
+      }
+
+      .top {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: lightblue;
+      }
+
+      .left {
+        background-color: lightcoral;
+      }
+      .right {
+        background-color: lightgreen;
+      }
+      .bottom {
+        background-color: lightyellow;
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
+
+    <div id="wrapper__training">
+      <div id="training">
+        <span class="top">ᐃ</span>
+        <div></div>
+        <span class="left">ᐊ</span>
+        <span class="right">ᐁ</span>
+        <span class="bottom">ᐅ</span>
+      </div>
+    </div>
+    <div id="loader__screen">Load...</div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
