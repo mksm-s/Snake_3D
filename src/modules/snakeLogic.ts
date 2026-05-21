@@ -1,8 +1,8 @@
 import * as THREE from 'three'
 
-import { materialSnake, geometrySnake, scene } from './graphics.js'
-import { optCtrlSnake } from './options.js'
-import { restartGame } from './global.js'
+import { restartGame } from './global'
+import { geometrySnake, materialSnake, scene } from './graphics'
+import { optCtrlSnake } from './options'
 
 export function createCube(x, y, z = 0) {
   optCtrlSnake.body.unshift({ x, y, z })

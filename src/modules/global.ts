@@ -1,13 +1,13 @@
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 
-import { camera, renderer, scene } from './graphics.js'
-import { optWindow, optGlobal, optCtrlSnake, optModelLoad } from './options.js'
-import { ambit, snakePath, activeKeyTrue } from './controls.js'
-import { createCube } from './snakeLogic.js'
-import { checkingTouchFood, updateCounterFoot } from './footLogic.js'
+import { activeKeyTrue, ambit, snakePath } from './controls'
+import { checkingTouchFood, updateCounterFoot } from './footLogic'
+import { camera, renderer, scene } from './graphics'
+import { optCtrlSnake, optGlobal, optModelLoad, optWindow } from './options'
+import { createCube } from './snakeLogic'
 
 // engine
-function engine(now) {
+function engine(now: number = performance.now()) {
   requestAnimationFrame(engine)
 
   let delta = now - optGlobal.then,

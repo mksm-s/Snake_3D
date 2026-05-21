@@ -1,17 +1,17 @@
 import * as THREE from 'three'
 
 import {
-  optWindow,
+  optAmbLight,
   optCamera,
-  optScene,
-  optPlatform,
-  optSnake,
-  optFoot,
   optDirLightOne,
   optDirLightTwo,
-  optAmbLight,
-} from './options.js'
-import { createCube } from './snakeLogic.js'
+  optFoot,
+  optPlatform,
+  optScene,
+  optSnake,
+  optWindow,
+} from './options'
+import { createCube } from './snakeLogic'
 
 // scene
 export const scene = new THREE.Scene()
@@ -20,7 +20,10 @@ scene.background = new THREE.Color(optScene.color)
 scene.rotateZ(optScene.rotZ)
 
 // renderer
-export const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true })
+const canvasEl = document.getElementById('canvas') as HTMLCanvasElement | null
+if (!canvasEl) throw new Error('Canvas element #canvas not found')
+
+export const renderer = new THREE.WebGLRenderer({ canvas: canvasEl, antialias: true })
 renderer.setSize(optWindow.w, optWindow.h)
 renderer.setPixelRatio(window.devicePixelRatio * 2)
 renderer.shadowMap.enabled = true
