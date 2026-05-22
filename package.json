@@ -26,8 +26,7 @@
     "typescript": "^5.5.4",
     "vite": "^5.4.0",
     "@types/node": "^20.11.0",
-    "@types/three": "^0.152.0",
-    "@types/normalize.css": "^8.0.0"
+    "@types/three": "^0.152.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",

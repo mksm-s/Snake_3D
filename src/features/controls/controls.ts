@@ -1,6 +1,3 @@
-<<<<<<<< HEAD:src/modules/controls.ts
-import { optCtrlSnake, optKey, optPlatform } from './options'
-========
 import { optCtrlSnake, optKey, optPlatform } from '@/shared/config/options'
 
 let inited = false
@@ -11,7 +8,6 @@ export function initControls() {
 
   window.addEventListener('keydown', control)
 }
->>>>>>>> b24981960af9fae0f6c23f32dec5831e7dd8f6d1:src/features/controls/controls.ts
 
 // snake path
 export function snakePath() {
